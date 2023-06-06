@@ -56,5 +56,20 @@ namespace WindowsFormsApp8
         {
 
         }
+
+        private void KeyIsDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void KeyIsUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void FormPaintEvent(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
