@@ -38,37 +38,39 @@
             // 
             // Exit
             // 
+            this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
             this.Exit.Location = new System.Drawing.Point(610, 33);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(70, 70);
             this.Exit.TabIndex = 0;
-            this.Exit.Text = " X";
+            this.Exit.Text = " ";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // right
             // 
+            this.right.Image = ((System.Drawing.Image)(resources.GetObject("right.Image")));
             this.right.Location = new System.Drawing.Point(609, 793);
             this.right.Name = "right";
             this.right.Size = new System.Drawing.Size(104, 79);
             this.right.TabIndex = 1;
-            this.right.Text = "->";
             this.right.UseVisualStyleBackColor = true;
             this.right.Click += new System.EventHandler(this.right_Click);
             // 
             // left
             // 
+            this.left.Image = ((System.Drawing.Image)(resources.GetObject("left.Image")));
             this.left.Location = new System.Drawing.Point(38, 793);
             this.left.Name = "left";
             this.left.Size = new System.Drawing.Size(104, 79);
             this.left.TabIndex = 2;
-            this.left.Text = "<-";
             this.left.UseVisualStyleBackColor = true;
             this.left.Click += new System.EventHandler(this.left_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(25, 33);
             this.pictureBox1.Name = "pictureBox1";
