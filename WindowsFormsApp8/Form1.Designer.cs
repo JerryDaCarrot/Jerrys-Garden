@@ -33,6 +33,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.carrot = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -78,11 +79,21 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // carrot
+            // 
+            this.carrot.AutoSize = true;
+            this.carrot.Location = new System.Drawing.Point(64, 88);
+            this.carrot.Name = "carrot";
+            this.carrot.Size = new System.Drawing.Size(70, 25);
+            this.carrot.TabIndex = 4;
+            this.carrot.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1855, 837);
+            this.Controls.Add(this.carrot);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -90,9 +101,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormPaintEvent);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +112,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label carrot;
     }
 }
 
