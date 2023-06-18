@@ -19,10 +19,10 @@ namespace WindowsFormsApp8
             InitializeComponent();
         }
 
-        
-
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            int count == 0;
             button2.Visible= false;
             button3.Visible= false;
             button4.Visible= false;
@@ -38,6 +38,7 @@ namespace WindowsFormsApp8
                 button2.Visible = true;
             }
                 
+
 
             // Create an instance of Form2
             Form2 form2 = new Form2();
