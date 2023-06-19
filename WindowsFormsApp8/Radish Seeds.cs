@@ -11,6 +11,11 @@ using System.Windows.Forms;
 namespace WindowsFormsApp8
 {
     public partial class Radish_Seeds : Form
+
+        //private PictureBox ;
+        //private List<Image> "" = new List<Image>();
+        //private int currentImageIndex = 0;
+
     {
         public Radish_Seeds()
         {
@@ -28,9 +33,10 @@ namespace WindowsFormsApp8
         private void LoadImages()
         {
             // Load your images and add them to the list
-            images.Add(Image.FromFile("image1.jpg"));
-            images.Add(Image.FromFile("image2.jpg"));
-            images.Add(Image.FromFile("image3.jpg"));
+            images.Add(Image.FromFile("19.png"));
+            images.Add(Image.FromFile("20.png"));
+            images.Add(Image.FromFile("21.png"));
+            images.Add(Image.FromFile("22.png"));
             // Add as many images as needed
 
             // Set the initial image to be displayed
@@ -63,8 +69,9 @@ namespace WindowsFormsApp8
         }
 
         private void exit_Click(object sender, EventArgs e)
-        {
+        { 
 
+          
         }
     }
 }
