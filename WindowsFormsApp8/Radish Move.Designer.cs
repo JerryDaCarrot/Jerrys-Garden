@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Radish_Move));
             this.button1 = new System.Windows.Forms.Button();
             this.JerryRadish = new System.Windows.Forms.PictureBox();
             this.radishSeeds = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,7 @@
             // 
             // JerryRadish
             // 
+            this.JerryRadish.Image = ((System.Drawing.Image)(resources.GetObject("JerryRadish.Image")));
             this.JerryRadish.Location = new System.Drawing.Point(121, 131);
             this.JerryRadish.Name = "JerryRadish";
             this.JerryRadish.Size = new System.Drawing.Size(127, 173);

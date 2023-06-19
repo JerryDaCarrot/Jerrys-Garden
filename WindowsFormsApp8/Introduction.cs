@@ -17,8 +17,11 @@ namespace WindowsFormsApp8
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Size = new Size(689, 191);
+
             Navigation navigation = new Navigation();
 
             // Display Form1
@@ -26,6 +29,8 @@ namespace WindowsFormsApp8
 
             // Hide the current form (optional)
             this.Hide();
+
+
         }
     }
 }

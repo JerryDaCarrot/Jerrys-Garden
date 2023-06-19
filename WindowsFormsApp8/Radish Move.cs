@@ -37,7 +37,7 @@ namespace WindowsFormsApp8
             }
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        public void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
             {
