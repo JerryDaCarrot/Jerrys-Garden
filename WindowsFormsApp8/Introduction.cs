@@ -19,10 +19,10 @@ namespace WindowsFormsApp8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Navigation navigation = new Navigation();
 
             // Display Form1
-            form1.Show();
+            navigation.Show();
 
             // Hide the current form (optional)
             this.Hide();
