@@ -22,7 +22,7 @@ namespace WindowsFormsApp8
         {
             button1.Size = new Size(689, 191);
 
-            Radish_Seeds navigation = new Radish_Seeds();
+            Navigation navigation = new Navigation();
 
             // Display Form1
             navigation.Show();

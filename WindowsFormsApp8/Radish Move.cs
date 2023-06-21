@@ -21,6 +21,25 @@ namespace WindowsFormsApp8
         {
             
         }
+        public void Radish_Move_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                    JerryRadish.Left -= 10;
+                    break;
+                case Keys.Right:
+                    JerryRadish.Left += 10;
+                    break;
+                case Keys.Up:
+                    JerryRadish.Top -= 10;
+                    break;
+                case Keys.Down:
+                    JerryRadish.Top += 10;
+                    break;
+
+            }
+        }
 
         private void pictureBox1_LocationChanged(object sender, EventArgs e)
         {
@@ -37,23 +56,5 @@ namespace WindowsFormsApp8
             }
         }
 
-        public void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.Left:
-                    JerryRadish.Left -= 10;
-                    break;
-                case Keys.Right:
-                    JerryRadish.Left += 10;
-                    break;
-                case Keys.Up:
-                    JerryRadish.Top -= 10;
-                    break;
-                case Keys.Down:
-                    JerryRadish.Top += 10;
-                    break;
-            }
-        }
     }
 }

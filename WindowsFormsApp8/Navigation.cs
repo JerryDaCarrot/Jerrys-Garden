@@ -16,5 +16,23 @@ namespace WindowsFormsApp8
         {
             InitializeComponent();
         }
+
+        private void Navigation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Radish_Click(object sender, EventArgs e)
+        {
+            
+            Radish_Move radish = new Radish_Move();
+
+            // Display Form1
+            radish.Show();
+
+            // Hide the current form (optional)
+            this.Hide();
+
+        }
     }
 }

@@ -52,6 +52,7 @@
             this.JerryRadish.Size = new System.Drawing.Size(127, 173);
             this.JerryRadish.TabIndex = 1;
             this.JerryRadish.TabStop = false;
+            this.JerryRadish.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.KeyDown);
             // 
             // radishSeeds
             // 
