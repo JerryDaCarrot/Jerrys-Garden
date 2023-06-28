@@ -15,35 +15,49 @@ namespace WindowsFormsApp8
         public Radish_Move()
         {
             InitializeComponent();
+
+            // Create a picture box and add it to the form
+            JerryRadish = new PictureBox
+            {
+                Image = Properties.Resources.jerryRadish, // Set your desired image
+                SizeMode = PictureBoxSizeMode.AutoSize,
+                Location = new System.Drawing.Point(100, 100) // Set initial position
+            };
+            Controls.Add(JerryRadish);
+
+            // Register the KeyDown event handler
+            KeyDown += RadishMove_KeyDown;
         }
 
-        private void Radish_Move_Load(object sender, EventArgs e)
+      
+
+        private void RadishMove_KeyDown(object sender, KeyEventArgs e)
         {
-            
-        }
-        public void Radish_Move_KeyDown(object sender, KeyEventArgs e)
-        {
+            const int moveAmount = 10; // Amount to move the picture box
+
+            // Update the location of the picture box based on the arrow key pressed
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    JerryRadish.Left -= 10;
+                    JerryRadish.Left -= moveAmount;
                     break;
                 case Keys.Right:
-                    JerryRadish.Left += 10;
+                    JerryRadish.Left += moveAmount;
                     break;
                 case Keys.Up:
-                    JerryRadish.Top -= 10;
+                    JerryRadish.Top -= moveAmount;
                     break;
                 case Keys.Down:
-                    JerryRadish.Top += 10;
+                    JerryRadish.Top += moveAmount;
                     break;
-
             }
         }
 
-        private void pictureBox1_LocationChanged(object sender, EventArgs e)
+
+
+        private void PictureBox1_LocationChanged(object sender, EventArgs e)
         {
-            if (JerryRadish.Location == new Point(121, 121))
+            if (JerryRadish.Location == new Point(408, 101))
             {
                 // Create an instance of Form2
                 Radish_Seeds radishSeeds = new Radish_Seeds();
@@ -54,6 +68,14 @@ namespace WindowsFormsApp8
                 // Hide the current form (optional)
                 this.Hide();
             }
+        }
+
+       
+
+
+        private void RadishSeeds_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

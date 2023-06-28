@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Radish_Move));
             this.button1 = new System.Windows.Forms.Button();
             this.JerryRadish = new System.Windows.Forms.PictureBox();
-            this.radishSeeds = new System.Windows.Forms.PictureBox();
+            this.RadishSeeds = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.JerryRadish)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radishSeeds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RadishSeeds)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -54,27 +54,27 @@
             this.JerryRadish.TabStop = false;
             this.JerryRadish.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.KeyDown);
             // 
-            // radishSeeds
+            // RadishSeeds
             // 
-            this.radishSeeds.Location = new System.Drawing.Point(421, 168);
-            this.radishSeeds.Name = "radishSeeds";
-            this.radishSeeds.Size = new System.Drawing.Size(181, 82);
-            this.radishSeeds.TabIndex = 2;
-            this.radishSeeds.TabStop = false;
+            this.RadishSeeds.Image = ((System.Drawing.Image)(resources.GetObject("RadishSeeds.Image")));
+            this.RadishSeeds.Location = new System.Drawing.Point(408, 101);
+            this.RadishSeeds.Name = "RadishSeeds";
+            this.RadishSeeds.Size = new System.Drawing.Size(68, 52);
+            this.RadishSeeds.TabIndex = 2;
+            this.RadishSeeds.TabStop = false;
             // 
             // Radish_Move
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1301, 871);
-            this.Controls.Add(this.radishSeeds);
+            this.Controls.Add(this.RadishSeeds);
             this.Controls.Add(this.JerryRadish);
             this.Controls.Add(this.button1);
             this.Name = "Radish_Move";
             this.Text = "Radish_Move";
-            this.Load += new System.EventHandler(this.Radish_Move_Load);
             ((System.ComponentModel.ISupportInitialize)(this.JerryRadish)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radishSeeds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RadishSeeds)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,6 +83,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox JerryRadish;
-        private System.Windows.Forms.PictureBox radishSeeds;
+        private System.Windows.Forms.PictureBox RadishSeeds;
     }
 }
