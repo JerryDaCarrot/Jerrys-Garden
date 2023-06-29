@@ -20,6 +20,8 @@ namespace WindowsFormsApp8
         public Radish_Seeds()
         {
             InitializeComponent();
+            LoadImages();
+            UpdatePictureBox();
         }
 
         private void Radish_Seeds_Load(object sender, EventArgs e)
@@ -28,44 +30,45 @@ namespace WindowsFormsApp8
         }
 
         private List<Image> images = new List<Image>();  // List to hold the images
-        private int currentIndex = 0;  // Index of the currently displayed image
+        private int currentImageIndex = 0;  // Index of the currently displayed image
 
         private void LoadImages()
         {
-            // Load your images and add them to the list
-            images.Add(Image.FromFile("19.png"));
-            images.Add(Image.FromFile("20.png"));
-            images.Add(Image.FromFile("21.png"));
-            images.Add(Image.FromFile("22.png"));
-            // Add as many images as needed
-
-            // Set the initial image to be displayed
-            Information.Image = images[currentIndex];
+            images = new List<Image>
+            {
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotSeeds.png"),
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotGrow.png"),
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotMaintain.png"),
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotGrown.png")
+            };
         }
 
         private void left_Click(object sender, EventArgs e)
         {
-            // Decrement the index to display the previous image
-            currentIndex--;
-            if (currentIndex < 0)
+            currentImageIndex--;
+            if (currentImageIndex < 0)
             {
-                currentIndex = images.Count - 1; // Wrap around to the last image if at the beginning of the list
+                currentImageIndex = images.Count - 1;
             }
 
-            // Display the new image
-            Information.Image = images[currentIndex];
+            UpdatePictureBox();
         }
 
         private void right_Click(object sender, EventArgs e)
         {
-            currentIndex++;
-            if (currentIndex >= images.Count)
+            currentImageIndex++;
+            if (currentImageIndex >= images.Count)
             {
-                currentIndex = 0; // Wrap around to the first image if at the end of the list
+                currentImageIndex = 0; // Wrap around to the first image if at the end of the list
             }
 
             // Display the new image
-            Information.Image = images[currentIndex];
+            Information.Image = images[currentImageIndex];
+        }
+
+        private void UpdatePictureBox()
+        {
+            Information.Image = images[currentImageIndex];
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -73,5 +76,6 @@ namespace WindowsFormsApp8
 
           
         }
+
     }
 }

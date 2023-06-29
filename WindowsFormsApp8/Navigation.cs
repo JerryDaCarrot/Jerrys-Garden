@@ -25,7 +25,7 @@ namespace WindowsFormsApp8
         private void Radish_Click(object sender, EventArgs e)
         {
             
-            Radish_Move radish = new Radish_Move();
+            RadishMove radish = new RadishMove();
 
             // Display Form1
             radish.Show();

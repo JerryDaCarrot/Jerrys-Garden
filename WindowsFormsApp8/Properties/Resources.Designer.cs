@@ -69,20 +69,45 @@ namespace WindowsFormsApp8.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
-        public override bool Equals(object obj)
-        {
-            return base.Equals(obj);
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CarrotS {
+            get {
+                object obj = ResourceManager.GetObject("CarrotS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
         }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CarrotT {
+            get {
+                object obj = ResourceManager.GetObject("CarrotT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
         }
-
-        public override string ToString()
-        {
-            return base.ToString();
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Play {
+            get {
+                object obj = ResourceManager.GetObject("Play", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seedy {
+            get {
+                object obj = ResourceManager.GetObject("seedy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
         }
     }
 }

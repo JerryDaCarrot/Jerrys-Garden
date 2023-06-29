@@ -18,7 +18,7 @@ namespace WindowsFormsApp8
 
             // Create a picture box and add it to the form
             jerryRadish = new PictureBox();
-            jerryRadish.Image = Properties.Resources.Carrot; // Set your desired image
+            jerryRadish.Image = Properties.Resources.CarrotS; // Set your desired image
             jerryRadish.SizeMode = PictureBoxSizeMode.AutoSize;
             jerryRadish.Location = new System.Drawing.Point(100, 100); // Set initial position
             Controls.Add(jerryRadish);
@@ -47,6 +47,29 @@ namespace WindowsFormsApp8
                     jerryRadish.Top += moveAmount;
                     break;
             }
+
+            Radish_Seeds radishSeeds = new Radish_Seeds();
+
+
+            // Check if the carrot reaches the target rectangular area
+            if (IsCarrotSInTargetArea())
+            {
+                // Display the new form
+                radishSeeds.Show();
+
+            }
+        }
+
+        private bool IsCarrotSInTargetArea()
+        {
+            Rectangle targetRectangle = new Rectangle(407, 182, 139, 74); // Define the target rectangular area
+
+            // Check if the carrot's bounds intersect with the target rectangle
+            return targetRectangle.IntersectsWith(jerryRadish.Bounds);
+        }
+
+        private void RadishMove_Load(object sender, EventArgs e)
+        {
 
         }
     }

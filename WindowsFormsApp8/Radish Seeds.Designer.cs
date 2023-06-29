@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Information = new System.Windows.Forms.PictureBox();
             this.left = new System.Windows.Forms.Button();
             this.right = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
+            this.Information = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Information)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Information
-            // 
-            this.Information.Location = new System.Drawing.Point(76, 103);
-            this.Information.Name = "Information";
-            this.Information.Size = new System.Drawing.Size(1152, 627);
-            this.Information.TabIndex = 0;
-            this.Information.TabStop = false;
             // 
             // left
             // 
@@ -55,7 +47,7 @@
             // 
             // right
             // 
-            this.right.Location = new System.Drawing.Point(1114, 747);
+            this.right.Location = new System.Drawing.Point(975, 746);
             this.right.Name = "right";
             this.right.Size = new System.Drawing.Size(144, 98);
             this.right.TabIndex = 2;
@@ -65,13 +57,22 @@
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(1083, 23);
+            this.exit.Location = new System.Drawing.Point(975, 12);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(144, 71);
             this.exit.TabIndex = 3;
             this.exit.Text = "x";
             this.exit.UseVisualStyleBackColor = true;
             this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // Information
+            // 
+            this.Information.Location = new System.Drawing.Point(312, 88);
+            this.Information.Name = "Information";
+            this.Information.Size = new System.Drawing.Size(535, 627);
+            this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Information.TabIndex = 0;
+            this.Information.TabStop = false;
             // 
             // Radish_Seeds
             // 
