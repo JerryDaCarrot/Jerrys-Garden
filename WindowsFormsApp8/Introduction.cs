@@ -22,10 +22,10 @@ namespace WindowsFormsApp8
         {
             button1.Size = new Size(689, 191);
 
-            Navigation navigation = new Navigation();
+            How_To_Play howToPlay = new How_To_Play();
 
             // Display Form1
-            navigation.Show();
+            howToPlay.Show();
 
             // Hide the current form (optional)
             this.Hide();

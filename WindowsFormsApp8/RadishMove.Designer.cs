@@ -42,7 +42,7 @@
             // 
             // jerryRadish
             // 
-            this.jerryRadish.Location = new System.Drawing.Point(72, 168);
+            this.jerryRadish.Location = new System.Drawing.Point(-27, -57);
             this.jerryRadish.Name = "jerryRadish";
             this.jerryRadish.Size = new System.Drawing.Size(95, 156);
             this.jerryRadish.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // grown
             // 
-            this.grown.Location = new System.Drawing.Point(782, 153);
+            this.grown.Location = new System.Drawing.Point(884, 336);
             this.grown.Name = "grown";
             this.grown.Size = new System.Drawing.Size(139, 74);
             this.grown.TabIndex = 4;
@@ -58,7 +58,7 @@
             // 
             // maintain
             // 
-            this.maintain.Location = new System.Drawing.Point(799, 513);
+            this.maintain.Location = new System.Drawing.Point(990, 731);
             this.maintain.Name = "maintain";
             this.maintain.Size = new System.Drawing.Size(139, 74);
             this.maintain.TabIndex = 3;
@@ -66,7 +66,7 @@
             // 
             // grow
             // 
-            this.grow.Location = new System.Drawing.Point(477, 486);
+            this.grow.Location = new System.Drawing.Point(100, 652);
             this.grow.Name = "grow";
             this.grow.Size = new System.Drawing.Size(139, 74);
             this.grow.TabIndex = 2;

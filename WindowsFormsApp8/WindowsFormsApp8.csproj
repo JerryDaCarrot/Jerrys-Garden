@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Carrot Info.cs" />
+    <Compile Include="How To Play.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="How To Play.Designer.cs">
+      <DependentUpon>How To Play.cs</DependentUpon>
+    </Compile>
     <Compile Include="Introduction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <Compile Include="RadishMove.Designer.cs">
       <DependentUpon>RadishMove.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="How To Play.resx">
+      <DependentUpon>How To Play.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +170,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CarrotS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTP7.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
