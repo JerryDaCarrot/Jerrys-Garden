@@ -12,19 +12,32 @@ namespace WindowsFormsApp8
 {
     public partial class RadishMove : Form
     {
+
         public RadishMove()
         {
             InitializeComponent();
 
             // Create a picture box and add it to the form
-            jerryRadish = new PictureBox();
+            
             jerryRadish.Image = Properties.Resources.CarrotS; // Set your desired image
+            jerryRadish.Size = new Size(50, 100);
             jerryRadish.SizeMode = PictureBoxSizeMode.AutoSize;
-            jerryRadish.Location = new System.Drawing.Point(100, 100); // Set initial position
+            jerryRadish.Location = new Point(100, 100);
+            jerryRadish.BackColor = Color.Transparent;
             Controls.Add(jerryRadish);
+
+            seeds.Location = new Point(407, 182);
+            seeds.Paint += PictureBox_Paint;
+            Controls.Add(seeds);
 
             // Register the KeyDown event handler
             KeyDown += Form1_KeyDown;
+            this.Focus();
+        }
+
+        private void PictureBox_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(Pens.MediumSpringGreen, 0, 0, seeds.Width - 1, seeds.Height - 1);
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -50,27 +63,15 @@ namespace WindowsFormsApp8
 
             Radish_Seeds radishSeeds = new Radish_Seeds();
 
-
-            // Check if the carrot reaches the target rectangular area
-            if (IsCarrotSInTargetArea())
+            if (seeds.Bounds.Contains(jerryRadish.Location))
             {
-                // Display the new form
                 radishSeeds.Show();
-
+                this.Hide();
             }
-        }
 
-        private bool IsCarrotSInTargetArea()
-        {
-            Rectangle targetRectangle = new Rectangle(407, 182, 139, 74); // Define the target rectangular area
-
-            // Check if the carrot's bounds intersect with the target rectangle
-            return targetRectangle.IntersectsWith(jerryRadish.Bounds);
-        }
-
-        private void RadishMove_Load(object sender, EventArgs e)
-        {
 
         }
+
+
     }
 }

@@ -72,8 +72,14 @@ namespace WindowsFormsApp8
         }
 
         private void exit_Click(object sender, EventArgs e)
-        { 
+        {
+            RadishMove radish = new RadishMove();
 
+            this.Hide();
+            radish.Show();
+
+            radish.seeds.Visible= false;
+            radish.maintain.Visible = true;
           
         }
 

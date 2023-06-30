@@ -192,5 +192,17 @@
   <ItemGroup>
     <None Include="Resources\HTP7.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maintain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grown.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

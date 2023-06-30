@@ -127,6 +127,12 @@
   <data name="CarrotT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CarrotT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Grow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HTP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HTP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,8 +154,14 @@
   <data name="HTP7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HTP7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Maintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seedy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seedy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
