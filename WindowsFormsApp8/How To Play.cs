@@ -73,10 +73,10 @@ namespace WindowsFormsApp8
 
         private void Finish_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation();
+            Levels levels = new Levels();
 
             // Display Form1
-            navigation.Show();
+            levels.Show();
 
             // Hide the current form (optional)
             this.Hide();

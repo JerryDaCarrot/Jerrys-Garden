@@ -83,7 +83,6 @@
             this.seeds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.seeds.TabIndex = 1;
             this.seeds.TabStop = false;
-            this.seeds.Visible = false;
             // 
             // jerryRadish
             // 

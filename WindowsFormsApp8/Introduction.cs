@@ -12,9 +12,18 @@ namespace WindowsFormsApp8
 {
     public partial class Introduction : Form
     {
+        public RadishMove radishMoveForm;
+        public Radish_Seeds radishSeedsForm;
+
         public Introduction()
         {
             InitializeComponent();
+
+            
+            
+
+            
+
         }
 
 
@@ -22,15 +31,37 @@ namespace WindowsFormsApp8
         {
             button1.Size = new Size(689, 191);
 
-            Levels levels = new Levels();
+            How_To_Play htp = new How_To_Play();
 
             // Display Form1
-            levels.Show();
+            htp.Show();
 
             // Hide the current form (optional)
             this.Hide();
 
 
         }
+
+
+        public void radishMoveButton_Click(object sender, EventArgs e)
+        {
+            RadishMove radishMoveForm = new RadishMove();
+
+            if (radishMoveForm == null)
+            {
+                radishMoveForm = new RadishMove();
+            }
+            
+
+            Radish_Seeds radishSeedsForm = new Radish_Seeds(radishMoveForm);
+            radishMoveForm.Show();
+            radishSeedsForm.Show();
+            this.Hide();
+        }
+
+        private void Introduction_Load(object sender, EventArgs e)
+        {
+            
+    }
     }
 }

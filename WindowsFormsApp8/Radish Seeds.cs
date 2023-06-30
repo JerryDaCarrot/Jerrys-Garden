@@ -18,8 +18,18 @@ namespace WindowsFormsApp8
 
 
     {
+
+
+
+        public Radish_Seeds(RadishMove radishMoveForm)
+        {
+            this.radishMoveForm = radishMoveForm;
+            InitializeComponent();
+        }
+
         public Radish_Seeds()
         {
+            
             InitializeComponent();
             LoadImages();
             UpdatePictureBox();
@@ -72,17 +82,16 @@ namespace WindowsFormsApp8
             Information.Image = images[currentImageIndex];
         }
 
+        RadishMove radishMoveForm = new RadishMove();
         private void exit_Click(object sender, EventArgs e)
         {
-            RadishMove radish = new RadishMove();
 
+            radishMoveForm.Show();
             this.Hide();
-            radish.Show();
 
-            radish.seeds.Visible= false;
-            radish.maintain.Visible = true;
-          
         }
+
+
 
     }
 }

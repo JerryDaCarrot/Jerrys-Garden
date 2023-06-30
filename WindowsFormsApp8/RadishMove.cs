@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 
 namespace WindowsFormsApp8
 {
     public partial class RadishMove : Form
     {
-        private List<string> completedLevels;
-        private List<Form> levelForms;
-
-        public string progressFilePath = "player_prog.txt";
+        
 
         public RadishMove()
         {
@@ -43,8 +41,6 @@ namespace WindowsFormsApp8
         }
 
 
-
-
         private void PictureBox_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawRectangle(Pens.DarkSeaGreen, 0, 0, seeds.Width - 1, seeds.Height - 1);
@@ -59,25 +55,84 @@ namespace WindowsFormsApp8
             {
                 case Keys.Left:
                     jerryRadish.Left -= moveAmount;
+                    CheckButtonCollision();
                     break;
                 case Keys.Right:
                     jerryRadish.Left += moveAmount;
+                    CheckButtonCollision();
                     break;
                 case Keys.Up:
                     jerryRadish.Top -= moveAmount;
+                    CheckButtonCollision();
                     break;
                 case Keys.Down:
                     jerryRadish.Top += moveAmount;
+                    CheckButtonCollision();
                     break;
             }
 
-
-
         }
 
-        private void RadishMove_Load(object sender, EventArgs e)
+        Radish_Seeds radishSeeds = new Radish_Seeds();
+
+
+        public void CheckButtonCollision()
         {
+            if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(407, 182), new Size(139, 167))))
+            {
+                radishSeeds.Show();
+                seeds.Visible = false;
+                maintain.Visible = true;
+                grow.Visible = false;
+                grown.Visible = false;
 
+            }
+            else if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(953, 626), new Size(139, 167))))
+            {
+                seeds.Visible = false;
+                maintain.Visible = false;
+                grow.Visible = true;
+                grown.Visible = false;
+            }
+            else if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(146, 500), new Size(182, 167))))
+            {
+                seeds.Visible = false;
+                maintain.Visible = false;
+                grow.Visible = false;
+                grown.Visible = true;
+            }
+            else if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(953, 626), new Size(139, 167))))
+            {
+                seeds.Visible = false;
+                maintain.Visible = false;
+                grow.Visible = false;
+                grown.Visible = false;
+            }
         }
+
+
+        public void RadishMove_Load(object sender, EventArgs e)
+        {
+            Radish_Seeds radishSeeds = new Radish_Seeds();
+
+            // Check if the carrot reaches the target rectangular area
+            if (IsCarrotSInTargetArea())
+            {
+                // Display the new form
+                radishSeeds.Show();
+                this.Hide();
+
+            }
+        }
+
+        public bool IsCarrotSInTargetArea()
+        {
+            Rectangle seedsRegion = new Rectangle(407, 182, 139, 74);
+
+            // Check if the carrot's bounds intersect with the target rectangle
+            return seedsRegion.IntersectsWith(jerryRadish.Bounds);
+        }
+
     }
 }
+
