@@ -15,6 +15,12 @@ namespace WindowsFormsApp8
         public How_To_Play()
         {
             InitializeComponent();
+            LoadImages();
+            UpdatePictureBox();
+        }
+        private void How_To_Play_Load(object sender, EventArgs e)
+        {
+
         }
 
         private List<Image> images = new List<Image>();  // List to hold the images
@@ -24,6 +30,7 @@ namespace WindowsFormsApp8
         {
             images = new List<Image>
             {
+                //Images that will fill the picturebox
                 Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\HTP1.png"),
                 Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\HTP2.png"),
                 Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\HTP3.png"),
@@ -36,6 +43,7 @@ namespace WindowsFormsApp8
 
         private void Previous_Click(object sender, EventArgs e)
         {
+            
             currentImageIndex--;
             if (currentImageIndex < 0)
             {
@@ -62,9 +70,16 @@ namespace WindowsFormsApp8
             HowToPlay.Image = images[currentImageIndex];
         }
 
-        private void How_To_Play_Load(object sender, EventArgs e)
-        {
 
+        private void Finish_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation();
+
+            // Display Form1
+            navigation.Show();
+
+            // Hide the current form (optional)
+            this.Hide();
         }
     }
 }
