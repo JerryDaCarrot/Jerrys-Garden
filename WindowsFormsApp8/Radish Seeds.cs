@@ -16,6 +16,7 @@ namespace WindowsFormsApp8
         //private List<Image> "" = new List<Image>();
         //private int currentImageIndex = 0;
 
+
     {
         public Radish_Seeds()
         {
@@ -36,10 +37,10 @@ namespace WindowsFormsApp8
         {
             images = new List<Image>
             {
-                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotSeeds.png"),
-                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotGrow.png"),
-                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotMaintain.png"),
-                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\carrotGrown.png")
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\RadishSeeds.png"),
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\RadishMaintain.png"),
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\RadishGrow.png"),
+                Image.FromFile("C:\\Users\\pc\\source\\repos\\WindowsFormsApp8\\WindowsFormsApp8\\Resources\\RadishGrown.png")
             };
         }
 

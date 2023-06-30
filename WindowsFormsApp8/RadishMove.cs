@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp8
 {
     public partial class RadishMove : Form
     {
+        private List<string> completedLevels;
+        private List<Form> levelForms;
+
+        public string progressFilePath = "player_prog.txt";
 
         public RadishMove()
         {
@@ -33,11 +38,16 @@ namespace WindowsFormsApp8
             // Register the KeyDown event handler
             KeyDown += Form1_KeyDown;
             this.Focus();
+
+            
         }
+
+
+
 
         private void PictureBox_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawRectangle(Pens.MediumSpringGreen, 0, 0, seeds.Width - 1, seeds.Height - 1);
+            e.Graphics.DrawRectangle(Pens.DarkSeaGreen, 0, 0, seeds.Width - 1, seeds.Height - 1);
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -61,17 +71,13 @@ namespace WindowsFormsApp8
                     break;
             }
 
-            Radish_Seeds radishSeeds = new Radish_Seeds();
-
-            if (seeds.Bounds.Contains(jerryRadish.Location))
-            {
-                radishSeeds.Show();
-                this.Hide();
-            }
 
 
         }
 
+        private void RadishMove_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

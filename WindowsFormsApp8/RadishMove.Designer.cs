@@ -67,7 +67,7 @@
             this.grow.Image = global::WindowsFormsApp8.Properties.Resources.Grow;
             this.grow.Location = new System.Drawing.Point(146, 500);
             this.grow.Name = "grow";
-            this.grow.Size = new System.Drawing.Size(139, 167);
+            this.grow.Size = new System.Drawing.Size(182, 167);
             this.grow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.grow.TabIndex = 2;
             this.grow.TabStop = false;
@@ -83,6 +83,7 @@
             this.seeds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.seeds.TabIndex = 1;
             this.seeds.TabStop = false;
+            this.seeds.Visible = false;
             // 
             // jerryRadish
             // 
@@ -97,13 +98,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1222, 847);
+            this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);
             this.Controls.Add(this.grow);
-            this.Controls.Add(this.seeds);
             this.Controls.Add(this.jerryRadish);
             this.Name = "RadishMove";
             this.Text = "RadishMove";
+            this.Load += new System.EventHandler(this.RadishMove_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).EndInit();

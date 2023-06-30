@@ -22,10 +22,10 @@ namespace WindowsFormsApp8
         {
             button1.Size = new Size(689, 191);
 
-            How_To_Play howToPlay = new How_To_Play();
+            Levels levels = new Levels();
 
             // Display Form1
-            howToPlay.Show();
+            levels.Show();
 
             // Hide the current form (optional)
             this.Hide();

@@ -61,7 +61,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carrot Info.cs" />
+    <Compile Include="Cabbage Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cabbage Move.Designer.cs">
+      <DependentUpon>Cabbage Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cabbage Seeds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cabbage Seeds.Designer.cs">
+      <DependentUpon>Cabbage Seeds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carrot Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrot Move.Designer.cs">
+      <DependentUpon>Carrot Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carrot Seeds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrot Seeds.Designer.cs">
+      <DependentUpon>Carrot Seeds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Corn Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Corn Move.Designer.cs">
+      <DependentUpon>Corn Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Corn Seeds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Corn Seeds.Designer.cs">
+      <DependentUpon>Corn Seeds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cucumber Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cucumber Move.Designer.cs">
+      <DependentUpon>Cucumber Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cucumber Seeds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cucumber Seeds.Designer.cs">
+      <DependentUpon>Cucumber Seeds.cs</DependentUpon>
+    </Compile>
     <Compile Include="How To Play.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +120,12 @@
     </Compile>
     <Compile Include="Introduction.Designer.cs">
       <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels.Designer.cs">
+      <DependentUpon>Levels.cs</DependentUpon>
     </Compile>
     <Compile Include="Navigation.cs">
       <SubType>Form</SubType>
@@ -99,11 +152,35 @@
     <Compile Include="RadishMove.Designer.cs">
       <DependentUpon>RadishMove.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tomato Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tomato Move.Designer.cs">
+      <DependentUpon>Tomato Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tomato Seeds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tomato Seeds.Designer.cs">
+      <DependentUpon>Tomato Seeds.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cabbage Seeds.resx">
+      <DependentUpon>Cabbage Seeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carrot Seeds.resx">
+      <DependentUpon>Carrot Seeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Corn Seeds.resx">
+      <DependentUpon>Corn Seeds.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="How To Play.resx">
       <DependentUpon>How To Play.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels.resx">
+      <DependentUpon>Levels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Navigation.resx">
       <DependentUpon>Navigation.cs</DependentUpon>
@@ -203,6 +280,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Grown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cabbage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cucumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CabbageGrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CabbageGrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CabbageMaintain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CabbageSeeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornGrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornGrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornMaintain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornSeeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadishGrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadishGrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadishMaintain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadishSeeds.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,7 +32,9 @@
             this.right = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.Information = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Information)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // left
@@ -74,11 +76,22 @@
             this.Information.TabIndex = 0;
             this.Information.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp8.Properties.Resources.Radish;
+            this.pictureBox1.Location = new System.Drawing.Point(902, 268);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(343, 447);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // Radish_Seeds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 884);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.right);
             this.Controls.Add(this.left);
@@ -87,6 +100,7 @@
             this.Text = "Radish_Seeds";
             this.Load += new System.EventHandler(this.Radish_Seeds_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Information)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,5 +111,6 @@
         private System.Windows.Forms.Button left;
         private System.Windows.Forms.Button right;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
