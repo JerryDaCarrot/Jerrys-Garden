@@ -107,8 +107,8 @@ namespace WindowsFormsApp8
         {
             
                 LoadLevel("Level1");
-            RadishMove radishMoveForm = new RadishMove();
-            radishMoveForm.ShowDialog();
+            RadishMove radish = new RadishMove();
+            radish.ShowDialog();
             this.Close();
 
         }

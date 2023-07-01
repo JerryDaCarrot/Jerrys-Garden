@@ -11,28 +11,23 @@ using System.Windows.Forms;
 namespace WindowsFormsApp8
 {
     public partial class Radish_Seeds : Form
+    { 
 
-        //private PictureBox ;
-        //private List<Image> "" = new List<Image>();
-        //private int currentImageIndex = 0;
+        private RadishMove radishMoveForm;
 
 
+
+    public Radish_Seeds(RadishMove radishMoveForm)
     {
-
-
-
-        public Radish_Seeds(RadishMove radishMoveForm)
-        {
-            this.radishMoveForm = radishMoveForm;
-            InitializeComponent();
-        }
+        this.radishMoveForm = radishMoveForm;
+        InitializeComponent();
+        LoadImages();
+        UpdatePictureBox();
+    
+    }
 
         public Radish_Seeds()
         {
-            
-            InitializeComponent();
-            LoadImages();
-            UpdatePictureBox();
         }
 
         private void Radish_Seeds_Load(object sender, EventArgs e)
@@ -82,7 +77,7 @@ namespace WindowsFormsApp8
             Information.Image = images[currentImageIndex];
         }
 
-        RadishMove radishMoveForm = new RadishMove();
+        
         private void exit_Click(object sender, EventArgs e)
         {
 

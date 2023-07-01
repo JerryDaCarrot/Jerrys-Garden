@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
+using WindowsFormsApp8;
 
 namespace WindowsFormsApp8
 {
@@ -37,9 +38,13 @@ namespace WindowsFormsApp8
             KeyDown += Form1_KeyDown;
             this.Focus();
 
-            
+            Load += RadishMove_Load;
+
+            radishSeedsForm = new Radish_Seeds(this); // Initialize radishSeedsForm
+
         }
 
+        private Radish_Seeds radishSeedsForm;
 
         private void PictureBox_Paint(object sender, PaintEventArgs e)
         {
@@ -73,36 +78,54 @@ namespace WindowsFormsApp8
 
         }
 
-        Radish_Seeds radishSeeds = new Radish_Seeds();
+        
 
+        private void CheckButtonCollision()
 
-        public void CheckButtonCollision()
         {
-            if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(407, 182), new Size(139, 167))))
+            
+
+            Radish_Seeds radish = new Radish_Seeds();
+
+            if (seeds.Visible && jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(407, 182), new Size(139, 167))))
             {
+                radishSeedsForm.Show();
+                Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
                 radishSeeds.Show();
+                this.Hide();
                 seeds.Visible = false;
                 maintain.Visible = true;
                 grow.Visible = false;
                 grown.Visible = false;
-
             }
-            else if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(953, 626), new Size(139, 167))))
+            else if (maintain.Visible && jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(953, 626), new Size(139, 167))))
             {
+                radishSeedsForm.Show();
+                Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+                radishSeeds.Show();
+                this.Hide();
                 seeds.Visible = false;
                 maintain.Visible = false;
                 grow.Visible = true;
                 grown.Visible = false;
             }
-            else if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(146, 500), new Size(182, 167))))
+            else if (grow.Visible && jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(146, 500), new Size(182, 167))))
             {
+                radishSeedsForm.Show();
+                Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+                radishSeeds.Show();
+                this.Hide();
                 seeds.Visible = false;
                 maintain.Visible = false;
                 grow.Visible = false;
                 grown.Visible = true;
             }
-            else if (jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(953, 626), new Size(139, 167))))
+            else if (grown.Visible && jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(953, 626), new Size(139, 167))))
             {
+                radishSeedsForm.Show();
+                Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+                radishSeeds.Show();
+                this.Hide();
                 seeds.Visible = false;
                 maintain.Visible = false;
                 grow.Visible = false;

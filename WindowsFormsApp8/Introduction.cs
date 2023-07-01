@@ -12,8 +12,7 @@ namespace WindowsFormsApp8
 {
     public partial class Introduction : Form
     {
-        public RadishMove radishMoveForm;
-        public Radish_Seeds radishSeedsForm;
+        
 
         public Introduction()
         {
@@ -39,19 +38,17 @@ namespace WindowsFormsApp8
             // Hide the current form (optional)
             this.Hide();
 
-
         }
 
 
-        public void radishMoveButton_Click(object sender, EventArgs e)
-        {
-            RadishMove radishMoveForm = new RadishMove();
+        private RadishMove radishMoveForm;
 
+        private void radishMoveButton_Click(object sender, EventArgs e)
+        {
             if (radishMoveForm == null)
             {
                 radishMoveForm = new RadishMove();
             }
-            
 
             Radish_Seeds radishSeedsForm = new Radish_Seeds(radishMoveForm);
             radishMoveForm.Show();
