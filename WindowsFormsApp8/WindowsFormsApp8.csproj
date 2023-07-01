@@ -353,5 +353,8 @@
   <ItemGroup>
     <None Include="Resources\RadishSeeds.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LevelsBG.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -86,7 +86,7 @@
             // 
             // jerryRadish
             // 
-            this.jerryRadish.Location = new System.Drawing.Point(-27, -57);
+            this.jerryRadish.Location = new System.Drawing.Point(-29, -139);
             this.jerryRadish.Name = "jerryRadish";
             this.jerryRadish.Size = new System.Drawing.Size(95, 156);
             this.jerryRadish.TabIndex = 0;
@@ -96,7 +96,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 847);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1462, 891);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);

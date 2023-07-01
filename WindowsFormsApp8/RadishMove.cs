@@ -17,6 +17,7 @@ namespace WindowsFormsApp8
     {
         
 
+
         public RadishMove()
         {
             InitializeComponent();
@@ -31,8 +32,9 @@ namespace WindowsFormsApp8
             Controls.Add(jerryRadish);
 
             seeds.Location = new Point(407, 182); //location of seeds
-            seeds.Paint += PictureBox_Paint; 
+            seeds.Paint += Seeds_Paint; 
             Controls.Add(seeds);
+
 
 
 
@@ -48,10 +50,14 @@ namespace WindowsFormsApp8
 
         private Radish_Seeds radishSeedsForm;
 
-        private void PictureBox_Paint(object sender, PaintEventArgs e)
+        private void Seeds_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawRectangle(Pens.DarkSeaGreen, 0, 0, seeds.Width - 1, seeds.Height - 1); //put box around seeds
         }
+
+        
+
+
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -91,11 +97,11 @@ namespace WindowsFormsApp8
 
             if (seeds.Visible && jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(407, 182), new Size(139, 167))))
             {
-                radishSeedsForm.Show();
+                
                 Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
                
                 //open the seeds page
-                radishSeeds.Show();
+                radishSeedsForm.Show();
                 this.Hide();
 
                 //update which picturebox is visible

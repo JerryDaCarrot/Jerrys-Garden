@@ -38,7 +38,7 @@
             this.button1.AutoSize = true;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.Image = global::WindowsFormsApp8.Properties.Resources.Play;
-            this.button1.Location = new System.Drawing.Point(294, 558);
+            this.button1.Location = new System.Drawing.Point(265, 547);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(406, 126);
             this.button1.TabIndex = 0;

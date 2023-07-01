@@ -293,6 +293,16 @@ namespace WindowsFormsApp8.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LevelsBG {
+            get {
+                object obj = ResourceManager.GetObject("LevelsBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Maintain {
             get {
                 object obj = ResourceManager.GetObject("Maintain", resourceCulture);

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using WindowsFormsApp8.Properties;
 
 namespace WindowsFormsApp8
 {
@@ -59,6 +60,8 @@ namespace WindowsFormsApp8
 
         private void UpdateLevelSelectionUI()
         {
+            
+
             foreach (Control control in Controls)
             {
                 if (control is Button button)
@@ -105,12 +108,17 @@ namespace WindowsFormsApp8
 
         private void level1_Click(object sender, EventArgs e)
         {
-            
+            if (completedLevels.Contains("Level1"))
+            {
                 LoadLevel("Level1");
-            RadishMove radish = new RadishMove();
-            radish.ShowDialog();
-            this.Close();
-
+                RadishMove radish = new RadishMove();
+                radish.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Level 1 is locked. Complete the earlier levels first.", "Level Locked");
+            }
         }
 
         private void level2_Click(object sender, EventArgs e)
@@ -197,5 +205,28 @@ namespace WindowsFormsApp8
             MoveCharacterToLevel(levelName);
         }
 
+        private void Levels_Load(object sender, EventArgs e)
+        {
+            // Set the background images for the buttons
+            level1.BackgroundImage = Properties.Resources.Radish;
+            level2.BackgroundImage = Properties.Resources.Corn;
+            level3.BackgroundImage = Properties.Resources.Cabbage;
+            level4.BackgroundImage = Properties.Resources.Cucumber;
+            level5.BackgroundImage = Properties.Resources.Tomato;
+            level6.BackgroundImage = Properties.Resources.Carrot;
+            // Set other buttons' background images in a similar way
+
+            // Set the layout mode for the background images
+            level1.BackgroundImageLayout = ImageLayout.Stretch;
+            level2.BackgroundImageLayout = ImageLayout.Stretch;
+            level3.BackgroundImageLayout = ImageLayout.Stretch;
+            level4.BackgroundImageLayout = ImageLayout.Stretch;
+            level5.BackgroundImageLayout = ImageLayout.Stretch;
+            level6.BackgroundImageLayout = ImageLayout.Stretch;
+            // Set other buttons' background image layout modes in a similar way
+
+            // Enable or disable the buttons based on the completed levels
+            UpdateLevelSelectionUI();
+        }
     }
 }
