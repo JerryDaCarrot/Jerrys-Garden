@@ -24,15 +24,17 @@ namespace WindowsFormsApp8
             // Create a picture box and add it to the form
             
             jerryRadish.Image = Properties.Resources.CarrotS; // Set your desired image
-            jerryRadish.Size = new Size(50, 100);
-            jerryRadish.SizeMode = PictureBoxSizeMode.AutoSize;
-            jerryRadish.Location = new Point(100, 100);
+            jerryRadish.Size = new Size(50, 100); //Set size
+            jerryRadish.SizeMode = PictureBoxSizeMode.AutoSize; 
+            jerryRadish.Location = new Point(100, 100); //where carrot starts
             jerryRadish.BackColor = Color.Transparent;
             Controls.Add(jerryRadish);
 
-            seeds.Location = new Point(407, 182);
-            seeds.Paint += PictureBox_Paint;
+            seeds.Location = new Point(407, 182); //location of seeds
+            seeds.Paint += PictureBox_Paint; 
             Controls.Add(seeds);
+
+
 
             // Register the KeyDown event handler
             KeyDown += Form1_KeyDown;
@@ -48,7 +50,7 @@ namespace WindowsFormsApp8
 
         private void PictureBox_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawRectangle(Pens.DarkSeaGreen, 0, 0, seeds.Width - 1, seeds.Height - 1);
+            e.Graphics.DrawRectangle(Pens.DarkSeaGreen, 0, 0, seeds.Width - 1, seeds.Height - 1); //put box around seeds
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -60,19 +62,19 @@ namespace WindowsFormsApp8
             {
                 case Keys.Left:
                     jerryRadish.Left -= moveAmount;
-                    CheckButtonCollision();
+                    CheckButtonCollision(); //see if jerryRadish has collided with the picturebox
                     break;
                 case Keys.Right:
                     jerryRadish.Left += moveAmount;
-                    CheckButtonCollision();
+                    CheckButtonCollision(); //see if jerryRadish has collided with the picturebox
                     break;
                 case Keys.Up:
                     jerryRadish.Top -= moveAmount;
-                    CheckButtonCollision();
+                    CheckButtonCollision(); //see if jerryRadish has collided with the picturebox
                     break;
                 case Keys.Down:
                     jerryRadish.Top += moveAmount;
-                    CheckButtonCollision();
+                    CheckButtonCollision(); //see if jerryRadish has collided with the picturebox
                     break;
             }
 
@@ -91,8 +93,12 @@ namespace WindowsFormsApp8
             {
                 radishSeedsForm.Show();
                 Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+               
+                //open the seeds page
                 radishSeeds.Show();
                 this.Hide();
+
+                //update which picturebox is visible
                 seeds.Visible = false;
                 maintain.Visible = true;
                 grow.Visible = false;
@@ -102,8 +108,12 @@ namespace WindowsFormsApp8
             {
                 radishSeedsForm.Show();
                 Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+
+                //open the seeds page
                 radishSeeds.Show();
                 this.Hide();
+
+                //update which picturebox is visible
                 seeds.Visible = false;
                 maintain.Visible = false;
                 grow.Visible = true;
@@ -113,8 +123,12 @@ namespace WindowsFormsApp8
             {
                 radishSeedsForm.Show();
                 Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+
+                //open the seeds page
                 radishSeeds.Show();
                 this.Hide();
+
+                //update which picturebox is visible
                 seeds.Visible = false;
                 maintain.Visible = false;
                 grow.Visible = false;
@@ -124,8 +138,12 @@ namespace WindowsFormsApp8
             {
                 radishSeedsForm.Show();
                 Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
+
+                //open the seeds page
                 radishSeeds.Show();
                 this.Hide();
+
+                //update which picturebox is visible
                 seeds.Visible = false;
                 maintain.Visible = false;
                 grow.Visible = false;

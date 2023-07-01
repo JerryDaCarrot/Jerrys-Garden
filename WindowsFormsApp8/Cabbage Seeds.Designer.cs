@@ -32,12 +32,14 @@
             this.right = new System.Windows.Forms.Button();
             this.left = new System.Windows.Forms.Button();
             this.Information = new System.Windows.Forms.PictureBox();
+            this.Cabbage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Information)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cabbage)).BeginInit();
             this.SuspendLayout();
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(1118, 20);
+            this.exit.Location = new System.Drawing.Point(1019, 15);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(144, 71);
             this.exit.TabIndex = 7;
@@ -46,7 +48,7 @@
             // 
             // right
             // 
-            this.right.Location = new System.Drawing.Point(1118, 754);
+            this.right.Location = new System.Drawing.Point(1019, 749);
             this.right.Name = "right";
             this.right.Size = new System.Drawing.Size(144, 98);
             this.right.TabIndex = 6;
@@ -55,7 +57,7 @@
             // 
             // left
             // 
-            this.left.Location = new System.Drawing.Point(194, 765);
+            this.left.Location = new System.Drawing.Point(95, 760);
             this.left.Name = "left";
             this.left.Size = new System.Drawing.Size(144, 98);
             this.left.TabIndex = 5;
@@ -64,18 +66,29 @@
             // 
             // Information
             // 
-            this.Information.Location = new System.Drawing.Point(455, 96);
+            this.Information.Location = new System.Drawing.Point(128, 73);
             this.Information.Name = "Information";
             this.Information.Size = new System.Drawing.Size(535, 627);
             this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Information.TabIndex = 4;
             this.Information.TabStop = false;
             // 
+            // Cabbage
+            // 
+            this.Cabbage.Image = global::WindowsFormsApp8.Properties.Resources.Cabbage;
+            this.Cabbage.Location = new System.Drawing.Point(731, 328);
+            this.Cabbage.Name = "Cabbage";
+            this.Cabbage.Size = new System.Drawing.Size(377, 371);
+            this.Cabbage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cabbage.TabIndex = 8;
+            this.Cabbage.TabStop = false;
+            // 
             // Cabbage_Seeds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1456, 883);
+            this.Controls.Add(this.Cabbage);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.right);
             this.Controls.Add(this.left);
@@ -83,6 +96,7 @@
             this.Name = "Cabbage_Seeds";
             this.Text = "Cabbage_Seeds";
             ((System.ComponentModel.ISupportInitialize)(this.Information)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cabbage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,5 +107,6 @@
         private System.Windows.Forms.Button right;
         private System.Windows.Forms.Button left;
         private System.Windows.Forms.PictureBox Information;
+        private System.Windows.Forms.PictureBox Cabbage;
     }
 }

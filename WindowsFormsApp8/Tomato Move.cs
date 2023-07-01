@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
+using WindowsFormsApp8;
 
 namespace WindowsFormsApp8
 {
@@ -15,6 +18,11 @@ namespace WindowsFormsApp8
         public Tomato_Move()
         {
             InitializeComponent();
+        }
+
+        private void Tomato_Move_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

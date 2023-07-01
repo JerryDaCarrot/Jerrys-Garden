@@ -164,14 +164,29 @@
     <Compile Include="Tomato Seeds.Designer.cs">
       <DependentUpon>Tomato Seeds.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cabbage Move.resx">
+      <DependentUpon>Cabbage Move.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cabbage Seeds.resx">
       <DependentUpon>Cabbage Seeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carrot Move.resx">
+      <DependentUpon>Carrot Move.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carrot Seeds.resx">
       <DependentUpon>Carrot Seeds.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Corn Move.resx">
+      <DependentUpon>Corn Move.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Corn Seeds.resx">
       <DependentUpon>Corn Seeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cucumber Move.resx">
+      <DependentUpon>Cucumber Move.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cucumber Seeds.resx">
+      <DependentUpon>Cucumber Seeds.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="How To Play.resx">
       <DependentUpon>How To Play.cs</DependentUpon>
@@ -195,6 +210,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RadishMove.resx">
       <DependentUpon>RadishMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tomato Move.resx">
+      <DependentUpon>Tomato Move.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tomato Seeds.resx">
+      <DependentUpon>Tomato Seeds.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
