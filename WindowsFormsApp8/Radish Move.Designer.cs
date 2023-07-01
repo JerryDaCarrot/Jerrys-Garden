@@ -51,7 +51,7 @@
             // seeds
             // 
             this.seeds.ErrorImage = null;
-            this.seeds.Image = global::WindowsFormsApp8.Properties.Resources.Seeds;
+            this.seeds.Image = global::WindowsFormsApp8.Properties.Resources.GrowingSteps;
             this.seeds.Location = new System.Drawing.Point(584, 108);
             this.seeds.Name = "seeds";
             this.seeds.Size = new System.Drawing.Size(139, 167);

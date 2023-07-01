@@ -127,6 +127,9 @@
   <data name="CabbageGrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CabbageGrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cabbage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cabbage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Maintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,17 +148,20 @@
   <data name="RadishSeeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RadishSeeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RadishMaintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RadishMaintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CornMaintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CornMaintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RadishGrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RadishGrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cabbage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cabbage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RadishMaintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadishMaintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LevelsBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LevelsBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CabbageMaintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CabbageMaintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HTP4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HTP4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +169,14 @@
   <data name="Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CabbageGrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CabbageGrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Tomato" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tomato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HTP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HTP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Radish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Radish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Corn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Corn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +190,11 @@
   <data name="Cucumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cucumber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Radish" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Radish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CornGrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CornGrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CabbageMaintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CabbageMaintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CabbageGrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CabbageGrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Carrot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,13 +217,13 @@
   <data name="HTP6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HTP6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CornMaintain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CornMaintain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HTP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HTP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CornSeeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CornSeeds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GrowingSteps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrowingSteps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -185,12 +185,7 @@ namespace WindowsFormsApp8
             return seedsRegion.IntersectsWith(jerryRadish.Bounds);
         }
 
-        private void ToNav_Click(object sender, EventArgs e)
-        {
-            Levels levels = new Levels();
-            levels.Show();
-            this.Hide();
-        }
+
 
 
     }

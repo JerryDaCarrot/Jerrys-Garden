@@ -223,6 +223,16 @@ namespace WindowsFormsApp8.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GrowingSteps {
+            get {
+                object obj = ResourceManager.GetObject("GrowingSteps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grown {
             get {
                 object obj = ResourceManager.GetObject("Grown", resourceCulture);
