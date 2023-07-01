@@ -13,18 +13,23 @@ namespace WindowsFormsApp8
     public partial class Radish_Seeds : Form
     { 
 
-        private RadishMove radishMoveForm;
+        private Radish_Move radishMoveForm;
 
 
 
     public Radish_Seeds(RadishMove radishMoveForm)
     {
-        this.radishMoveForm = radishMoveForm;
-        InitializeComponent();
-        LoadImages();
-        UpdatePictureBox();
+        
     
     }
+
+        public Radish_Seeds(Radish_Move radish_Move)
+        {
+            this.radishMoveForm = radishMoveForm;
+            InitializeComponent();
+            LoadImages();
+            UpdatePictureBox();
+        }
 
         public Radish_Seeds()
         {

@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using WindowsFormsApp8.Properties;
 
 namespace WindowsFormsApp8
 {
@@ -46,6 +45,7 @@ namespace WindowsFormsApp8
             }
         }
 
+
         private void SavePlayerProgress()
         {
             try
@@ -60,8 +60,6 @@ namespace WindowsFormsApp8
 
         private void UpdateLevelSelectionUI()
         {
-            
-
             foreach (Control control in Controls)
             {
                 if (control is Button button)
@@ -92,7 +90,7 @@ namespace WindowsFormsApp8
                     // Code to load and display the selected level
                     RadishMove radish = new RadishMove();
                     radish.Show();
-                    
+
 
                     // Example: Move character to the level
                     MoveCharacterToLevel("Level" + selectedLevel);
@@ -106,19 +104,20 @@ namespace WindowsFormsApp8
             // Example: Update character's position, animations, etc.
         }
 
+
+        private void LoadLevel(string levelName)
+        {
+            // Code to load and display the selected level
+            MessageBox.Show("Loading Level: " + levelName);
+            MoveCharacterToLevel(levelName);
+        }
+
         private void level1_Click(object sender, EventArgs e)
         {
-            if (completedLevels.Contains("Level1"))
-            {
-                LoadLevel("Level1");
-                RadishMove radish = new RadishMove();
-                radish.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Level 1 is locked. Complete the earlier levels first.", "Level Locked");
-            }
+            LoadLevel("Level1");
+            Radish_Move radishMoveForm = new Radish_Move();
+            radishMoveForm.ShowDialog();
+            this.Close();
         }
 
         private void level2_Click(object sender, EventArgs e)
@@ -142,7 +141,7 @@ namespace WindowsFormsApp8
             if (completedLevels.Contains("Level2"))
             {
                 LoadLevel("Level3");
-                Cabbage_Move cabbage= new Cabbage_Move();
+                Cabbage_Move cabbage = new Cabbage_Move();
                 cabbage.ShowDialog();
                 this.Close();
             }
@@ -157,7 +156,7 @@ namespace WindowsFormsApp8
             if (completedLevels.Contains("Level3"))
             {
                 LoadLevel("Level4");
-                Cucumber_Move cucumber= new Cucumber_Move();
+                Cucumber_Move cucumber = new Cucumber_Move();
                 cucumber.ShowDialog();
                 this.Close();
 
@@ -168,12 +167,12 @@ namespace WindowsFormsApp8
             }
         }
 
-        private void level5_Click(object sender, EventArgs e)
+        private void level5_Click_1(object sender, EventArgs e)
         {
             if (completedLevels.Contains("Level4"))
             {
                 LoadLevel("Level5");
-                Tomato_Move tomato= new Tomato_Move();
+                Tomato_Move tomato = new Tomato_Move();
                 tomato.ShowDialog();
                 this.Close();
             }
@@ -183,12 +182,12 @@ namespace WindowsFormsApp8
             }
         }
 
-        private void level6_Click(object sender, EventArgs e)
+        private void level6_Click_1(object sender, EventArgs e)
         {
             if (completedLevels.Contains("Level5"))
             {
                 LoadLevel("Level6");
-                Carrot_Move carrot= new Carrot_Move();
+                Carrot_Move carrot = new Carrot_Move();
                 carrot.ShowDialog();
                 this.Close();
             }
@@ -198,14 +197,7 @@ namespace WindowsFormsApp8
             }
         }
 
-        private void LoadLevel(string levelName)
-        {
-            // Code to load and display the selected level
-            MessageBox.Show("Loading Level: " + levelName);
-            MoveCharacterToLevel(levelName);
-        }
-
-        private void Levels_Load(object sender, EventArgs e)
+        private void Levels_Load_1(object sender, EventArgs e)
         {
             // Set the background images for the buttons
             level1.BackgroundImage = Properties.Resources.Radish;

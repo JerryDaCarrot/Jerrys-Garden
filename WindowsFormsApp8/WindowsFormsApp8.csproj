@@ -140,6 +140,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Radish Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Radish Move.Designer.cs">
+      <DependentUpon>Radish Move.cs</DependentUpon>
+    </Compile>
     <Compile Include="Radish Seeds.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Radish Move.resx">
+      <DependentUpon>Radish Move.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Radish Seeds.resx">
       <DependentUpon>Radish Seeds.cs</DependentUpon>
@@ -355,6 +364,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LevelsBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,25 +13,25 @@ using WindowsFormsApp8;
 
 namespace WindowsFormsApp8
 {
-    public partial class RadishMove : Form
+    public partial class Radish_Move : Form
     {
-        
 
 
-        public RadishMove()
+
+        public Radish_Move()
         {
             InitializeComponent();
             // Create a picture box and add it to the form
 
             jerryRadish.Image = Properties.Resources.CarrotT; // Set your desired image
             jerryRadish.Size = new Size(50, 100); //Set size
-            jerryRadish.SizeMode = PictureBoxSizeMode.AutoSize; 
+            jerryRadish.SizeMode = PictureBoxSizeMode.AutoSize;
             jerryRadish.Location = new Point(100, 100); //where carrot starts
             jerryRadish.BackColor = Color.Transparent;
             Controls.Add(jerryRadish);
 
             seeds.Location = new Point(407, 182); //location of seeds
-            seeds.Paint += PictureBox_Paint; 
+            seeds.Paint += PictureBox_Paint;
             Controls.Add(seeds);
 
 
@@ -54,7 +54,7 @@ namespace WindowsFormsApp8
             e.Graphics.DrawRectangle(Pens.DarkSeaGreen, 0, 0, seeds.Width - 1, seeds.Height - 1); //put box around seeds
         }
 
-        
+
 
 
 
@@ -86,22 +86,22 @@ namespace WindowsFormsApp8
 
         }
 
-        
+
 
         private void CheckButtonCollision()
 
         {
-            
+
 
             Radish_Seeds radish = new Radish_Seeds();
 
             if (seeds.Visible && jerryRadish.Bounds.IntersectsWith(new Rectangle(new Point(407, 182), new Size(139, 167))))
             {
-                
+
                 Radish_Seeds radishSeeds = new Radish_Seeds(this); // Pass the instance of RadishMove
-               
+
                 //open the seeds page
-                radishSeedsForm.Show();
+                radishSeeds.Show();
                 this.Hide();
 
                 //update which picturebox is visible
@@ -161,8 +161,7 @@ namespace WindowsFormsApp8
         public void RadishMove_Load(object sender, EventArgs e)
         {
 
-            ToNav.BackgroundImage = Properties.Resources.BackButton;
-            ToNav.BackgroundImageLayout = ImageLayout.Stretch;
+            
 
             Radish_Seeds radishSeeds = new Radish_Seeds();
 
@@ -192,6 +191,7 @@ namespace WindowsFormsApp8
             levels.Show();
             this.Hide();
         }
+
+
     }
 }
-
