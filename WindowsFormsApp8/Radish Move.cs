@@ -185,8 +185,9 @@ namespace WindowsFormsApp8
             return seedsRegion.IntersectsWith(jerryRadish.Bounds);
         }
 
+        private void Radish_Move_Load(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }

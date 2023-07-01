@@ -45,6 +45,7 @@
             this.exit.TabIndex = 12;
             this.exit.Text = "x";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // right
             // 

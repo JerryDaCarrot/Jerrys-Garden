@@ -55,6 +55,7 @@
             this.exit.TabIndex = 12;
             this.exit.Text = "x";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click_1);
             // 
             // right
             // 
@@ -95,6 +96,7 @@
             this.Controls.Add(this.Information);
             this.Name = "Corn_Seeds";
             this.Text = "Corn_Seeds";
+            this.Load += new System.EventHandler(this.Corn_Seeds_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Information)).EndInit();
             this.ResumeLayout(false);

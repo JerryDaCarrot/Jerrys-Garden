@@ -419,5 +419,25 @@ namespace WindowsFormsApp8.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Welcome_to_Jerry_s_Garden {
+            get {
+                object obj = ResourceManager.GetObject("Welcome to Jerry\'s Garden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Welcome_to_Jerry_s_Garden1 {
+            get {
+                object obj = ResourceManager.GetObject("Welcome to Jerry\'s Garden1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

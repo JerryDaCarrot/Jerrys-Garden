@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp8
 {
@@ -29,6 +30,10 @@ namespace WindowsFormsApp8
             InitializeComponent();
             LoadImages();
             UpdatePictureBox();
+        }
+
+        public Radish_Seeds(string progressFilePath)
+        {
         }
 
         public Radish_Seeds()
@@ -82,12 +87,22 @@ namespace WindowsFormsApp8
             Information.Image = images[currentImageIndex];
         }
 
-        
+        public bool IsExitButtonPressed { get; private set; }
         private void exit_Click(object sender, EventArgs e)
         {
-
-            radishMoveForm.Show();
+            Levels levels = new Levels();
+            IsExitButtonPressed = true;
+            levels.Show();
             this.Hide();
+
+            // Set the level 1 as completed in the player_progress.txt file
+            string progressFilePath = "player_progress.txt";
+            File.AppendAllText(progressFilePath, "Level1" + Environment.NewLine);
+
+            if (!string.IsNullOrEmpty(progressFilePath))
+            {
+                File.AppendAllText(progressFilePath, "Level1" + Environment.NewLine);
+            }
 
         }
 

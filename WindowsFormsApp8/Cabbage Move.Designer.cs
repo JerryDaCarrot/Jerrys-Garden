@@ -32,10 +32,12 @@
             this.grown = new System.Windows.Forms.PictureBox();
             this.maintain = new System.Windows.Forms.PictureBox();
             this.grow = new System.Windows.Forms.PictureBox();
+            this.jerryCabbage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCabbage)).BeginInit();
             this.SuspendLayout();
             // 
             // seeds
@@ -82,11 +84,20 @@
             this.grow.TabStop = false;
             this.grow.Visible = false;
             // 
+            // jerryCabbage
+            // 
+            this.jerryCabbage.Location = new System.Drawing.Point(1272, 22);
+            this.jerryCabbage.Name = "jerryCabbage";
+            this.jerryCabbage.Size = new System.Drawing.Size(30, 38);
+            this.jerryCabbage.TabIndex = 9;
+            this.jerryCabbage.TabStop = false;
+            // 
             // Cabbage_Move
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1441, 882);
+            this.Controls.Add(this.jerryCabbage);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);
@@ -97,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCabbage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +119,6 @@
         public System.Windows.Forms.PictureBox grown;
         public System.Windows.Forms.PictureBox maintain;
         public System.Windows.Forms.PictureBox grow;
+        private System.Windows.Forms.PictureBox jerryCabbage;
     }
 }

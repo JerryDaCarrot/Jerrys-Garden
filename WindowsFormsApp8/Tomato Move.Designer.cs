@@ -32,10 +32,12 @@
             this.grown = new System.Windows.Forms.PictureBox();
             this.maintain = new System.Windows.Forms.PictureBox();
             this.grow = new System.Windows.Forms.PictureBox();
+            this.jerryTomato = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryTomato)).BeginInit();
             this.SuspendLayout();
             // 
             // seeds
@@ -82,22 +84,31 @@
             this.grow.TabStop = false;
             this.grow.Visible = false;
             // 
+            // jerryTomato
+            // 
+            this.jerryTomato.Location = new System.Drawing.Point(839, 48);
+            this.jerryTomato.Name = "jerryTomato";
+            this.jerryTomato.Size = new System.Drawing.Size(57, 30);
+            this.jerryTomato.TabIndex = 9;
+            this.jerryTomato.TabStop = false;
+            // 
             // Tomato_Move
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1470, 882);
+            this.Controls.Add(this.jerryTomato);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);
             this.Controls.Add(this.grow);
             this.Name = "Tomato_Move";
             this.Text = "Tomato_Move";
-            this.Load += new System.EventHandler(this.Tomato_Move_Load);
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryTomato)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,5 +119,6 @@
         public System.Windows.Forms.PictureBox grown;
         public System.Windows.Forms.PictureBox maintain;
         public System.Windows.Forms.PictureBox grow;
+        private System.Windows.Forms.PictureBox jerryTomato;
     }
 }

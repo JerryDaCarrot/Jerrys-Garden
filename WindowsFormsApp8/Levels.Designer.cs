@@ -41,16 +41,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp8.Properties.Resources.LevelsBG;
-            this.pictureBox1.Location = new System.Drawing.Point(-22, -27);
+            this.pictureBox1.Location = new System.Drawing.Point(-75, -54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1616, 1005);
+            this.pictureBox1.Size = new System.Drawing.Size(1540, 948);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // level1
             // 
-            this.level1.Location = new System.Drawing.Point(124, 587);
+            this.level1.Location = new System.Drawing.Point(30, 537);
             this.level1.Name = "level1";
             this.level1.Size = new System.Drawing.Size(199, 219);
             this.level1.TabIndex = 7;
@@ -59,7 +59,7 @@
             // 
             // level2
             // 
-            this.level2.Location = new System.Drawing.Point(191, 336);
+            this.level2.Location = new System.Drawing.Point(97, 286);
             this.level2.Name = "level2";
             this.level2.Size = new System.Drawing.Size(206, 187);
             this.level2.TabIndex = 8;
@@ -68,7 +68,7 @@
             // 
             // level3
             // 
-            this.level3.Location = new System.Drawing.Point(460, 324);
+            this.level3.Location = new System.Drawing.Point(366, 274);
             this.level3.Name = "level3";
             this.level3.Size = new System.Drawing.Size(248, 199);
             this.level3.TabIndex = 9;
@@ -77,7 +77,7 @@
             // 
             // level4
             // 
-            this.level4.Location = new System.Drawing.Point(531, 569);
+            this.level4.Location = new System.Drawing.Point(437, 519);
             this.level4.Name = "level4";
             this.level4.Size = new System.Drawing.Size(199, 255);
             this.level4.TabIndex = 10;
@@ -86,7 +86,7 @@
             // 
             // level5
             // 
-            this.level5.Location = new System.Drawing.Point(953, 679);
+            this.level5.Location = new System.Drawing.Point(859, 629);
             this.level5.Name = "level5";
             this.level5.Size = new System.Drawing.Size(238, 158);
             this.level5.TabIndex = 11;
@@ -95,7 +95,7 @@
             // 
             // level6
             // 
-            this.level6.Location = new System.Drawing.Point(1063, 389);
+            this.level6.Location = new System.Drawing.Point(969, 339);
             this.level6.Name = "level6";
             this.level6.Size = new System.Drawing.Size(199, 230);
             this.level6.TabIndex = 12;

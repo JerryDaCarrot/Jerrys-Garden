@@ -32,19 +32,21 @@
             this.grown = new System.Windows.Forms.PictureBox();
             this.maintain = new System.Windows.Forms.PictureBox();
             this.grow = new System.Windows.Forms.PictureBox();
+            this.jerryCucumber = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCucumber)).BeginInit();
             this.SuspendLayout();
             // 
             // seeds
             // 
             this.seeds.ErrorImage = null;
-            this.seeds.Image = global::WindowsFormsApp8.Properties.Resources.Seeds;
-            this.seeds.Location = new System.Drawing.Point(1220, 34);
+            this.seeds.Image = global::WindowsFormsApp8.Properties.Resources.GrowingSteps;
+            this.seeds.Location = new System.Drawing.Point(1168, 34);
             this.seeds.Name = "seeds";
-            this.seeds.Size = new System.Drawing.Size(139, 167);
+            this.seeds.Size = new System.Drawing.Size(191, 233);
             this.seeds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.seeds.TabIndex = 5;
             this.seeds.TabStop = false;
@@ -82,21 +84,32 @@
             this.grow.TabStop = false;
             this.grow.Visible = false;
             // 
+            // jerryCucumber
+            // 
+            this.jerryCucumber.Location = new System.Drawing.Point(144, 62);
+            this.jerryCucumber.Name = "jerryCucumber";
+            this.jerryCucumber.Size = new System.Drawing.Size(37, 30);
+            this.jerryCucumber.TabIndex = 9;
+            this.jerryCucumber.TabStop = false;
+            // 
             // Cucumber_Move
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 890);
+            this.Controls.Add(this.jerryCucumber);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);
             this.Controls.Add(this.grow);
             this.Name = "Cucumber_Move";
             this.Text = "Cucumber_Move";
+            this.Load += new System.EventHandler(this.Cucumber_Move_Load);
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCucumber)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +120,6 @@
         public System.Windows.Forms.PictureBox grown;
         public System.Windows.Forms.PictureBox maintain;
         public System.Windows.Forms.PictureBox grow;
+        private System.Windows.Forms.PictureBox jerryCucumber;
     }
 }

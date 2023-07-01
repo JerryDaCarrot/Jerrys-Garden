@@ -32,16 +32,18 @@
             this.grown = new System.Windows.Forms.PictureBox();
             this.maintain = new System.Windows.Forms.PictureBox();
             this.grow = new System.Windows.Forms.PictureBox();
+            this.jerryCorn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCorn)).BeginInit();
             this.SuspendLayout();
             // 
             // seeds
             // 
             this.seeds.ErrorImage = null;
-            this.seeds.Image = global::WindowsFormsApp8.Properties.Resources.Seeds;
+            this.seeds.Image = global::WindowsFormsApp8.Properties.Resources.GrowingSteps;
             this.seeds.Location = new System.Drawing.Point(1215, 614);
             this.seeds.Name = "seeds";
             this.seeds.Size = new System.Drawing.Size(139, 167);
@@ -82,11 +84,20 @@
             this.grow.TabStop = false;
             this.grow.Visible = false;
             // 
+            // jerryCorn
+            // 
+            this.jerryCorn.Location = new System.Drawing.Point(46, 780);
+            this.jerryCorn.Name = "jerryCorn";
+            this.jerryCorn.Size = new System.Drawing.Size(92, 35);
+            this.jerryCorn.TabIndex = 9;
+            this.jerryCorn.TabStop = false;
+            // 
             // Corn_Move
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1443, 870);
+            this.Controls.Add(this.jerryCorn);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);
@@ -97,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCorn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +119,6 @@
         public System.Windows.Forms.PictureBox grown;
         public System.Windows.Forms.PictureBox maintain;
         public System.Windows.Forms.PictureBox grow;
+        private System.Windows.Forms.PictureBox jerryCorn;
     }
 }

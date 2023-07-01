@@ -32,10 +32,12 @@
             this.grown = new System.Windows.Forms.PictureBox();
             this.maintain = new System.Windows.Forms.PictureBox();
             this.grow = new System.Windows.Forms.PictureBox();
+            this.jerryCarrot = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCarrot)).BeginInit();
             this.SuspendLayout();
             // 
             // seeds
@@ -82,11 +84,20 @@
             this.grow.TabStop = false;
             this.grow.Visible = false;
             // 
+            // jerryCarrot
+            // 
+            this.jerryCarrot.Location = new System.Drawing.Point(448, 44);
+            this.jerryCarrot.Name = "jerryCarrot";
+            this.jerryCarrot.Size = new System.Drawing.Size(80, 47);
+            this.jerryCarrot.TabIndex = 9;
+            this.jerryCarrot.TabStop = false;
+            // 
             // Carrot_Move
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1470, 882);
+            this.Controls.Add(this.jerryCarrot);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
             this.Controls.Add(this.maintain);
@@ -97,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jerryCarrot)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +119,6 @@
         public System.Windows.Forms.PictureBox grown;
         public System.Windows.Forms.PictureBox maintain;
         public System.Windows.Forms.PictureBox grow;
+        private System.Windows.Forms.PictureBox jerryCarrot;
     }
 }

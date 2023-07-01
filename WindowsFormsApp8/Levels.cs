@@ -88,12 +88,7 @@ namespace WindowsFormsApp8
                 {
                     MessageBox.Show("Loading Level: " + selectedLevel);
                     // Code to load and display the selected level
-                    RadishMove radish = new RadishMove();
-                    radish.Show();
-
-
-                    // Example: Move character to the level
-                    MoveCharacterToLevel("Level" + selectedLevel);
+                    // MoveCharacterToLevel("Level" + selectedLevel);
                 }
             }
         }
@@ -102,6 +97,14 @@ namespace WindowsFormsApp8
         {
             // Code to move the character to the specified level
             // Example: Update character's position, animations, etc.
+        }
+
+        private void MarkLevelAsCompleted(string levelName)
+        {
+            if (!completedLevels.Contains(levelName))
+            {
+                completedLevels.Add(levelName);
+            }
         }
 
 
@@ -114,6 +117,7 @@ namespace WindowsFormsApp8
 
         private void level1_Click(object sender, EventArgs e)
         {
+            MarkLevelAsCompleted("Level1");
             LoadLevel("Level1");
             Radish_Move radishMoveForm = new Radish_Move();
             radishMoveForm.ShowDialog();
@@ -124,30 +128,32 @@ namespace WindowsFormsApp8
         {
             if (completedLevels.Contains("Level1"))
             {
+                MarkLevelAsCompleted("Level2");
                 LoadLevel("Level2");
                 Corn_Move corn = new Corn_Move();
                 corn.ShowDialog();
                 this.Close();
-
             }
             else
             {
                 MessageBox.Show("Level 2 is locked. Complete the earlier levels first.", "Level Locked");
             }
+
         }
 
         private void level3_Click(object sender, EventArgs e)
         {
-            if (completedLevels.Contains("Level2"))
+            if (completedLevels.Contains("Level3"))
             {
-                LoadLevel("Level3");
+                MarkLevelAsCompleted("Level3");
+                LoadLevel("Level2");
                 Cabbage_Move cabbage = new Cabbage_Move();
                 cabbage.ShowDialog();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Level 2 is locked. Complete the earlier levels first.", "Level Locked");
+                MessageBox.Show("Level 3 is locked. Complete the earlier levels first.", "Level Locked");
             }
         }
 
@@ -155,6 +161,7 @@ namespace WindowsFormsApp8
         {
             if (completedLevels.Contains("Level3"))
             {
+                MarkLevelAsCompleted("Level4");
                 LoadLevel("Level4");
                 Cucumber_Move cucumber = new Cucumber_Move();
                 cucumber.ShowDialog();
@@ -163,7 +170,7 @@ namespace WindowsFormsApp8
             }
             else
             {
-                MessageBox.Show("Level 2 is locked. Complete the earlier levels first.", "Level Locked");
+                MessageBox.Show("Level 4 is locked. Complete the earlier levels first.", "Level Locked");
             }
         }
 
@@ -171,6 +178,7 @@ namespace WindowsFormsApp8
         {
             if (completedLevels.Contains("Level4"))
             {
+                MarkLevelAsCompleted("Level5");
                 LoadLevel("Level5");
                 Tomato_Move tomato = new Tomato_Move();
                 tomato.ShowDialog();
@@ -178,7 +186,7 @@ namespace WindowsFormsApp8
             }
             else
             {
-                MessageBox.Show("Level 2 is locked. Complete the earlier levels first.", "Level Locked");
+                MessageBox.Show("Level 5 is locked. Complete the earlier levels first.", "Level Locked");
             }
         }
 
@@ -186,6 +194,7 @@ namespace WindowsFormsApp8
         {
             if (completedLevels.Contains("Level5"))
             {
+                MarkLevelAsCompleted("Level6");
                 LoadLevel("Level6");
                 Carrot_Move carrot = new Carrot_Move();
                 carrot.ShowDialog();
@@ -193,7 +202,7 @@ namespace WindowsFormsApp8
             }
             else
             {
-                MessageBox.Show("Level 2 is locked. Complete the earlier levels first.", "Level Locked");
+                MessageBox.Show("Level 6 is locked. Complete the earlier levels first.", "Level Locked");
             }
         }
 

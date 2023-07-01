@@ -96,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1395, 845);
+            this.ClientSize = new System.Drawing.Size(1473, 881);
             this.Controls.Add(this.jerryRadish);
             this.Controls.Add(this.seeds);
             this.Controls.Add(this.grown);
@@ -104,6 +104,7 @@
             this.Controls.Add(this.grow);
             this.Name = "Radish_Move";
             this.Text = "Radish_Move";
+            this.Load += new System.EventHandler(this.Radish_Move_Load);
             ((System.ComponentModel.ISupportInitialize)(this.jerryRadish)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seeds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grown)).EndInit();
